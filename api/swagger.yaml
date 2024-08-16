@@ -1,0 +1,134 @@
+openapi: 3.0.0
+info:
+  title: Admin App API
+  version: 1.0.0
+  description: API documentation for the Admin App
+
+servers:
+  - url: http://localhost:5000/api/v1
+    description: Development server
+
+tags:
+  - name: Users
+    description: User management API
+
+paths:
+  /users:
+    post:
+      summary: Create a new user
+      tags: 
+        - Users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userID:
+                  type: string
+                name:
+                  type: string
+                email:
+                  type: string
+      responses:
+        '201':
+          description: User created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+        '400':
+          description: Bad request
+
+    get:
+      summary: Get all users
+      tags: 
+        - Users
+      responses:
+        '200':
+          description: A list of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+        '400':
+          description: Bad request
+
+  /users/{id}:
+    get:
+      summary: Get a user by ID
+      tags: 
+        - Users
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: The user ID
+      responses:
+        '200':
+          description: The user data
+          content:
+            application/json:
+              schema:
+                type: object
+        '404':
+          description: User not found
+        '400':
+          description: Bad request
+
+    put:
+      summary: Update a user by ID
+      tags: 
+        - Users
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: The user ID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: User updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+        '404':
+          description: User not found
+        '400':
+          description: Bad request
+
+    delete:
+      summary: Delete a user by ID
+      tags: 
+        - Users
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: The user ID
+      responses:
+        '200':
+          description: User deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+        '404':
+          description: User not found
+        '400':
+          description: Bad request

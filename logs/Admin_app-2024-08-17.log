@@ -1,0 +1,14 @@
+{"label":"router.js","level":"debug","message":"Server running on port 5000","timestamp":"2024-08-17 00:07:34:153"}
+{"label":"router.js","level":"debug","message":"Server running on port 5000","timestamp":"2024-08-17 00:08:57:607"}
+{"label":"router.js","level":"debug","message":"get all users","timestamp":"2024-08-17 00:10:01:515"}
+{"label":"router.js","level":"debug","message":"MongoDB connected!","timestamp":"2024-08-17 00:10:02:190"}
+{"label":"router.js","level":"debug","message":"Server running on port 5000","timestamp":"2024-08-17 00:10:59:841"}
+{"label":"router.js","level":"debug","message":"Server running on port 5000","timestamp":"2024-08-17 00:11:28:499"}
+{"label":"router.js","level":"debug","message":"Server running on port 5000","timestamp":"2024-08-17 00:11:45:382"}
+{"label":"router.js","level":"debug","message":"Server running on port 5000","timestamp":"2024-08-17 00:12:01:435"}
+{"label":"router.js","level":"debug","message":"get all users","timestamp":"2024-08-17 00:12:15:216"}
+{"label":"router.js","level":"debug","message":"MongoDB connected!","timestamp":"2024-08-17 00:12:17:038"}
+{"label":"router.js","level":"debug","message":"Server running on port 5000","timestamp":"2024-08-17 00:12:47:388"}
+{"label":"router.js","level":"debug","message":"Server running on port 5000","timestamp":"2024-08-17 00:54:35:473"}
+{"label":"router.js","level":"debug","message":"insert new user","timestamp":"2024-08-17 00:55:09:858"}
+{"label":"router.js","level":"debug","message":"MongoDB connected!","timestamp":"2024-08-17 00:55:10:501"}
